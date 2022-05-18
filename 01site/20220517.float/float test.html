@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{margin: 0;padding: 0;}
+    li{list-style: none;}
+    .clearfix::after{content:"";display: block;clear: both;}
+
+    div.headerWrap{width: 1000px;margin: 0 auto;background-color:skyblue;}
+    div.hearderWarp>h1{width: 150px;line-height: 100px;text-align: center;float:left;}
+    div.hearderWarp>nav.navbar{width: 700px;float: left;background-color: rgb(255, 0, 0);}
+    </style>    
+</head>
+
+<body>
+    <div class="hearderWrap clearfix">
+     <h1>LOGO</h1>
+     <nav class="navbar">
+        <ul class="clearfix">
+         <li>menu</li>
+         <li>menu</li>
+         <li>menu</li>
+         <li>menu</li>
+        </ul>
+     </nav>
+    </div>
+</body>
+</html>

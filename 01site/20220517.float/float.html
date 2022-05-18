@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset  */
+        *{margin: 0;padding: 0;}
+        li{list-style:none}
+        .clearfix:after{content:"";display: block;clear: both;}
+
+        /* header  */
+        div.headerWrap{width: 1000px;margin: 0 auto;background-color:skyblue;}
+        /* div.headerWrap:after{content:"";display:block;clear:both} */
+        div.headerWrap>h1{
+            background-color: pink;
+            width: 150px;line-height:100px;
+            text-align:center;float: left;
+        }
+        div.headerWrap>nav.navbar{
+            width: 700px;float:right;
+            background-color: green;
+        }
+        div.headerWrap>nav.navbar>ul>li{float: left;width: 25%;text-align: center;line-height: 100px;}
+        /* div.headerWrap>nav.navbar>ul:after{content:"";display: block;clear: both;} */
+
+        /* visual  */
+        .visual{height: 400px;background-color:pink;}
+
+        /* section  */
+        .section{width: 1000px;margin: 0 auto}
+        .section>.contents{width: 750px;height: 500px;background-color:gray;float: left;}
+        .section>.aside{width: 240px;height:500px;background-color: aqua;float: right;}
+
+        /* footer  */
+        .footer{background-color: #eee;padding:20px 0 50px}
+        .footer>address{width: 1000px;margin: 0 auto}
+
+    </style>
+</head>
+<body>
+    <div class="headerWrap clearfix">
+        <h1>LOGO</h1>
+        <nav class="navbar">
+            <ul class="clearfix">
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="visual"></div>
+    <section class="section clearfix">
+        <div class="contents"></div>
+        <aside class="aside"></aside>
+    </section>
+    <footer class="footer">
+        <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, expedita.</address>
+    </footer>
+</body>
+</html>

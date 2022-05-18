@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가비아 글로벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        /* reset  */
+        *{margin: 0;padding: 0;}
+        li{list-style:none;}
+        .clearfix:after{content:"";display: block;clear: both;}
+        a:link{color:#333;text-decoration:none}
+        a:visited{color:#333}
+        a:hover{color:#333}
+
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* header  */
+        .headerWrap{width: 1440px;margin: 0 auto;}
+        .headerWrap>h1{width: 168px;line-height: 60px;float: left;}
+        .navbar{width: 540px;float: right;}
+        .navbar>ul>li{float: left;width: 25%;}
+        .navbar>ul>li>a{
+            display: block;line-height: 60px;text-align:center;
+            font-size:15px
+        }
+
+        /* visual  */
+        .visualWrap{
+            height: 643px;background-image: url(images/210616_bg.jpg);
+        }
+        .visual{width: 1440px;margin: 0 auto;height: 643px;padding-top:230px}
+        .visual>h2{font-size:50px;color:white;}
+
+        /* section  */
+        .section{background: pink;width: 1440px;height: 300px;margin: 0 auto}
+    </style>
+</head>
+<body>
+    <header class="headerWrap clearfix">
+        <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+        <nav class="navbar">
+            <ul class="clearfix">
+                <li><a href="#">아마존입점</a></li>
+                <li><a href="#">알리바바입점</a></li>
+                <li><a href="#">쇼핑몰제작</a></li>
+                <li><a href="#">국내몰운영</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="visualWrap">
+        <div class="visual">
+            <h2>중소벤처기업진흥공단<br>온라인수출지원사업 </h2>
+        </div>
+    </div>
+    <section class="section"></section>
+</body>
+</html>
