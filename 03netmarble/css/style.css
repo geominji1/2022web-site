@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* header */
+
+.headerWrap{width: 1920px;height: 968px; background-image: url(../images/netmable01.jpg);margin: 0 auto;}
+.headertopWrap{width: 1280px;height: 84px;display: block;margin: 0 auto;position: relative}
+.headerWrap h2{width: 172px;height: 84px;text-align: center;line-height: 80px}
+.headerWrap h2 a{color: rgb(255, 255, 255); font-size: 20px;}
+.headerWrap h2 a:hover{background-color: rgb(255, 255, 255);color:rgb(0, 0, 0)}
+.navbar{position: absolute;right: 20px;bottom: 20px;}
+.navbar>ul>li{float: right;}
+.navbar>ul>li>a{display: block;padding:10px 20px;font-size: 18px;color: rgb(255, 255, 255);}
+.navbar>ul>li>a:hover{background-color: rgb(255, 255, 255);color:rgb(0, 0, 0)}

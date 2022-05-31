@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가비아 글로벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- jquery 파일 / bxslide 소스(bxslide.js/bxslide.css) -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <style>
+        /* reset  */
+        *{margin: 0;padding: 0;}
+        li{list-style:none;}
+        .clearfix:after{content:"";display: block;clear: both;}
+        a:link,a:visited{color:#333;text-decoration:none}
+        a:hover{color:#333}
+        img{display: block;}
+
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* header  */
+        .headerWrap{width: 1440px;margin: 0 auto;}
+        .headerWrap>h1{width: 168px;line-height: 60px;float: left;}
+        .headerWrap img{display: initial;}
+        .navbar{width: 540px;float: right;}
+        .navbar>ul>li{float: left;width: 25%;}
+        .navbar>ul>li>a{
+            display: block;line-height: 60px;text-align:center;
+            font-size:15px
+        }
+
+        /* visual  */
+        /* .visualWrap{
+            height: 643px;background-image: url(images/210616_bg.jpg);
+        } */
+        .visual{width: 1440px;margin: 0 auto;height: 643px;padding-top:230px}
+        .visual>h2{font-size:50px;color:white;}
+
+        /* section 1st */
+        .sec_1st{
+            width: 1440px;margin: 0 auto;
+            padding:120px 0 60px 0;
+        }
+        /* .sec_1st>h2{text-align: center;font-size:40px;background-color: gray;} */
+        .sec_1st>h2{
+            margin: 0 auto;text-align: center;font-size:40px;line-height: 45px;
+            margin-bottom: 50px;
+        }
+
+        .sec_1st>.content{}
+        .sec_1st>.content>div{float: left;width:701px;margin-right: 38px;}
+        .sec_1st>.content>div:last-child{margin-right: 0;}
+        
+        .sec_1st .conItem>div{float: left;}
+        .sec_1st .conItem>div.img{
+            background-color: #f6f6f6;
+            border-radius:81px;margin-right: 40px;
+        }
+        .sec_1st .conItem>div.img>img{display: block;}
+        .sec_1st .conItem>div.textWrap{padding-top: 30px;}
+        .sec_1st .conItem>div.textWrap>h3{margin-bottom: 10px;}
+        .sec_1st .conItem>div.textWrap>p{font-size:18px;color:#7c7c7c}
+
+        /* section 2st  */
+        .sec_2st{width: 1440px;margin: 0 auto;}
+        .sec_2st>.left{float: left;width: 440px;}
+        .sec_2st>.right{float: left;width: 1000px;}
+        .sec_2st>.right li{
+            float: left;margin-right: 16px;margin-bottom: 16px;
+            width: 492px;height: 127px;background-color:pink;
+        }
+        .sec_2st>.right li:nth-child(2),
+        .sec_2st>.right li:nth-child(4){margin-right: 0;}
+        
+        .sec_2st>.right li:last-child{width: 100%;margin-bottom:0;}
+
+        
+        /* common */
+        h2{font-size: 40px !important;}
+        h3{font-size: 22px !important;}
+        .bg1{background-color: #f6f6f6;}
+        .py50{padding-top: 50px !important;padding-bottom: 50px !important;}
+        .py70{padding-top: 70px !important;padding-bottom: 70px !important;}
+        .py130{padding-top: 130px !important;padding-bottom: 130px !important;}
+
+
+
+        /* bxslide */
+        .bx-wrapper {
+            -moz-box-shadow: 0 0 0 #ccc;
+            -webkit-box-shadow: 0 0 0 #ccc;
+            box-shadow: 0 0 0 #ccc;
+            border: 0 none;
+        }
+
+    </style>
+    <script>
+       $(document).ready(function(){
+        $(".slider").bxSlider()
+       })
+       
+
+    </script>
+</head>
+<body>
+    <header class="headerWrap clearfix">
+        <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+        <nav class="navbar">
+            <ul class="clearfix">
+                <li><a href="#">아마존입점</a></li>
+                <li><a href="#">알리바바입점</a></li>
+                <li><a href="#">쇼핑몰제작</a></li>
+                <li><a href="#">국내몰운영</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="visualWrap">
+        <ul class="slider">
+            <li><img src="images/210616_bg.jpg" alt=""></li>
+            <li><img src="images/210616_bg.jpg" alt=""></li>
+            <li><img src="images/210616_bg.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <section class="sec_1st">
+        <h2>해외 마켓 전문가가<br>수출을 도와드립니다</h2>
+
+        <div class="content clearfix">
+
+            <div class="conItem clearfix">
+                <div class="img"><img src="images/logo_amazon.png" alt=""></div>
+                <div class="textWrap">
+                    <h3>아마존 입점</h3>
+                    <p>전 세계 3억명의 아마존 고객을 대상으로<br>
+                        고객사의 온라인 스토어를 오픈 및 운영 대행</p>
+                </div>
+            </div>
+
+            <div class="conItem clearfix">
+                <div class="img"><img src="images/logo_alibaba.png" alt=""></div>
+                <div class="textWrap">
+                    <h3>알리바바 입점</h3>
+                    <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>
+                        알리바바 입점 및 운영 대행</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec_1st">
+        <h2>해외 마켓 전문가가<br>수출을 도와드립니다</h2>
+
+        <div class="content clearfix">
+
+            <div class="conItem clearfix">
+                <div class="img"><img src="images/logo_amazon.png" alt=""></div>
+                <div class="textWrap">
+                    <h3>아마존 입점</h3>
+                    <p>전 세계 3억명의 아마존 고객을 대상으로<br>
+                        고객사의 온라인 스토어를 오픈 및 운영 대행</p>
+                </div>
+            </div>
+
+            <div class="conItem clearfix">
+                <div class="img"><img src="images/logo_alibaba.png" alt=""></div>
+                <div class="textWrap">
+                    <h3>알리바바 입점</h3>
+                    <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>
+                        알리바바 입점 및 운영 대행</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg1 py130">
+        <section class="sec_2st clearfix">
+            <div class="left">
+                <h2>가비아 글로벌이<br>더 특별한 이유</h2>
+            </div>
+            <div class="right">
+                <ul class="clearfix">
+                    <li><img src="images/banner1.png" alt=""></li>
+                    <li><img src="images/banner1.png" alt=""></li>
+                    <li><img src="images/banner1.png" alt=""></li>
+                    <li><img src="images/banner1.png" alt=""></li>
+                    <li><img src="images/banner2.png" alt=""></li>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+
+   
+
+</body>
+</html>
