@@ -10,3 +10,20 @@
 .navbar>ul>li{float: right;}
 .navbar>ul>li>a{display: block;padding:10px 20px;font-size: 18px;color: rgb(255, 255, 255);}
 .navbar>ul>li>a:hover{background-color: rgb(255, 255, 255);color:rgb(0, 0, 0)}
+
+
+.visual{position: relative;height: 100vh;min-height:800px}
+        .visual .txtWrap{position: absolute;width: 1280px;left:50%;margin-left: -640px;color:white;height: 100%;}
+        .visual .txtWrap .txt{position: absolute;top: 30%;}
+        .visual .txtWrap h3{font-size: 80px ;}
+        .visual .txtWrap p{font-size: 24px;margin-bottom: 15px;}
+        .visual .txtWrap a{
+            display: inline-block;background-color:white;
+            padding: 10px 20px;border-radius: 10px;
+        }
+        .visual .slideItem{
+            height:100vh;min-height:800px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
