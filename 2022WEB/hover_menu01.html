@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .navbarWrap{background-color: orange;}
+        .navbar{width: 1000px;margin: 0 auto}
+        .navbar li{float: left;width:calc( 100% / 6 );}
+        /* .navbar li:hover{background-color:blue;}
+        .navbar li:hover a{color:white} */
+        .navbar li a{display: block;line-height: 40px;text-align: center;transition:0.5s;}
+        .navbar li a:hover{background-color: blue;color:white;}
+
+        .visual{height: 300px;background: pink;margin-bottom: 20px;}
+
+        .container{width: 1000px;margin: 0 auto}
+        .sec1 li{
+            float: left;width:calc( ( 100% - 20px * 3 ) / 4 );
+            margin-right:20px;background: blue;border-radius: 5px;overflow: hidden;
+            position: relative;
+        }
+        .sec1 li:last-child{margin-right: 0;}
+        .sec1 li img{width: 100%;}
+
+
+        .sec1 li .txt{
+            position: absolute;top: 0;left: 0;background-color:rgba(0,0,255,0.5);
+            width: 100%;height: 100%;
+            display: flex;justify-content:center;align-items: center;
+            color:white;transition:0.3s;opacity: 0;cursor: pointer;
+        }
+        .sec1 li:hover .txt{opacity:1}
+        .sec1 h2{text-align: center;margin-bottom:10px;}
+        .sec1>p{text-align: center;margin-bottom: 20px;}
+
+        .line:after{
+            content:"";display: block;width: 50px;height: 2px;
+            background-color: #000;margin: 10px auto
+        }
+
+        .tac{text-align: center !important;}
+        .mb20{margin-bottom: 20px !important;}
+        .mb40{margin-bottom: 40px !important;}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbarWrap">
+        <nav class="navbar">
+            <ul class="clearfix">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+                <li><a href="#">menu6</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="visual"></div>
+    <div class="container mb40">
+        <!-- <h2>gallery</h2> -->
+        <section class="sec1">
+            <h2 class="line">gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt?</p>
+            <ul class="clearfix">
+                <!-- w1000 gutter 20 *3  -->
+                <li>
+                    <div class="txt">test1</div>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <div class="txt">test2</div>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <div class="txt">test3</div>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <div class="txt">test4</div>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="container">
+        <!-- <h2>gallery</h2> -->
+        <section class="sec2">
+            <h2 class="line tac">photo</h2>
+            <p class="tac mb20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sunt?</p>
+            <ul class="clearfix">
+                <!-- w1000 gutter 20 *3  -->
+                <li>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+                <li>
+                    <img src="../images/testimg.jpg" alt="">
+                </li>
+            </ul>
+        </section>
+    </div>
+    
+</body>
+</html>
