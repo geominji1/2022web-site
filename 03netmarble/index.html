@@ -5,53 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>넷마블문화제단</title>
+    <title>넷마블문화재단</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
 
 </head>
 <body>
-    <header class="headerWrap">
-        <div class="headertopWrap">
-            <h2><a href="#">넷마블문화재단</a></h2>
-        <nav class="navbar">
+    <div class="wrap">
+        <h3>넷마블문화재단</h3>
+        <nav class="container">
             <ul class="clearfix">
                 <li><a href="#">재단소개</a></li>
                 <li><a href="#">재단활동</a></li>
                 <li><a href="#">재단소식</a></li>
             </ul>
         </nav>
-        </div>
-
-        <div class="visual">
-            <ul class="slide1">
-                <li style="background-image:url(../images/netmable01.jpg)" class="slideItem">
-                    <div class="txtWrap">
-                        <div class="txt">
-                            <h3>어깨동무문고</h3>
-                            <p>다름을 이해하는 모두의 동화</p>
-                        </div>
+    </div>
+    <div class="visual">
+        <ul class="slide1">
+            <li style="background-image:url(../03netmarble/images/netmable01.jpg)" class="slideItem">
+                <div class="txtWrap">
+                    <div class="txt">
+                        <h3>어깨동무문고</h3>
+                        <p>다름을 이해하는 모두의 동화</p>
                     </div>
+                </div>
+                
+            </li>
+            <li style="background-image:url(../03netmarble/images/netmable04.jpg)" class="slideItem">
+                <div class="txtWrap">
+                    <div class="txt">
+                        <h3>게임소통교육</h3>
+                        <p>게임으로 소통하고 게임으로 가까워지는 가족</p>
+                    </div>
+                </div>
+            
+            </li>
+            <li style="background-image:url(../03netmarble/images/netmable05.jpg)" class="slideItem">
+                <div class="txtWrap">
+                    <div class="txt">
+                        <h3>전국 장애학생
+                        <br>e페스티벌</h3>
+                        <p>게임 안에서 하나 되는 모두의 축제</p>
+                    </div>
+                </div>
 
-        <!-- <div class="cont">
-             -->
+            </li>
+            <li style="background-image:url(../03netmarble/images/netmable06.jpg)" class="slideItem">
+                <div class="txtWrap">
+                    <div class="txt">
+                        <h3>견학프로그램</h3>
+                        <p>나의 게임 산업 탐방기</p>
+                    </div>
+                </div>
+               
+            </li>
+            <li style="background-image:url(../03netmarble/images/netmable07.jpg)" class="slideItem">
+                <div class="txtWrap">
+                    <div class="txt">
+                        <h3>게임아카데미</h3>
+                        <p>미래의 꿈 게임에 담다</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
 
+    </div>
 
+    <div style="height:1000px;background-color:rgb(255, 255, 255);"></div>
 
-        <!-- <div class="title01">
-            <h3>문화를 만들고 인재를 키우고
-            <br>마음을 나눕니다<br></h3> -->
-        <!-- </div> -->
-        
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide1").bxSlider({
+                controls:false
+            });})
+    </script>
 
-
-    </header>
-
-
-
-    
 </body>
 </html>
