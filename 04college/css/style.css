@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.container{
+    width: 1200px;margin: 0 auto
+}
+
+
+/* header  */
+#header{}
+.headerTopWrap{background-color: #75db4e;}
+
+.headerTop .collWrap{float: left;}
+.headerTop .collWrap li{float: left;width: 120px;background: #1e672c;font-size: 14px;margin-right: 2px;}
+.headerTop .collWrap li a{color:#fff;display: block;line-height: 40px;text-align: center;}
+/* .headerTop .collWrap li a:hover{background-color: #fff;color:#000} */
+.headerTop .collWrap li:hover{background: #fff;}
+.headerTop .collWrap li:hover a{color:#000}
+
+.headerTop .collWrap li.active{background: #fff;}
+.headerTop .collWrap li.active a{color:#000}
+
+
+.headerTop .utilWrap{float: right;}
+.headerTop .utilWrap li{float: left;font-size: 14px;}
+.headerTop .utilWrap li>a{
+    color:#fff;display: block;height: 40px;padding: 0 10px;
+    display: flex;justify-content: center;align-items: center;
+}
+.headerTop .utilWrap li:nth-child(2){padding-top: 10px;}
+.headerTop .utilWrap li:nth-child(2) a{
+    width: 20px;height: 20px;background-color: #fff;color:#000;
+    float: left;margin-right: 1px;
+}
+
+.headerBottom{height: 115px;}
+.LOGO{float: left;padding: 30px 0px;}
+.menuWrap{float: right;}
+.menuWrap li{float: left;font-size: 19px;}
+.menuWrap li>a{display: block;height: 120px;padding: 10px 30px;
+    display: flex;justify-content: center;align-items: center;}
+.menuWrap img{padding: 40px 0px;}
+
+
+/* section  */
+#section{
+    padding: 70px 0;
+    /* height: 1300px; */
+    /* background-color: blue; */
+    background-image: url(../images/dot.png),url(../images/main_bg1.jpg);
+    background-repeat: repeat,no-repeat;
+    background-position: center;
+    background-size: auto,cover;
+}
+#section .sec1st{height: 140px;background-color: rgb(255, 184, 184);margin-bottom: 50px;}
+#section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
+
+#section .sec2st>ul>li{background: white;}
+#section .sec2st>ul>li:nth-child(2n){background-color:pink;}
+
+#section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;}
+#section .sec2st>ul>li:nth-child(2){height: 450px;}
+#section .sec2st>ul>li:nth-child(3){}
+#section .sec2st>ul>li:nth-child(4){}
+#section .sec2st>ul>li:nth-child(5){}
+#section .sec2st>ul>li:nth-child(6){}
+#section .sec2st>ul>li:nth-child(7){}
+#section .sec2st>ul>li:nth-child(8){width: 900px;}
