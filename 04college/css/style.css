@@ -38,8 +38,7 @@
 .menuWrap li{float: left;font-size: 19px;}
 .menuWrap li>a{display: block;height: 120px;padding: 10px 30px;
     display: flex;justify-content: center;align-items: center;}
-.menuWrap img{padding: 40px 0px;}
-
+.ikon{float: left;}
 
 /* section  */
 #section{
@@ -52,8 +51,15 @@
     background-size: auto,cover;
 }
 #section .sec1st{height: 140px;background-color: rgb(255, 184, 184);margin-bottom: 50px;}
-#section .sec1st h3{color: #fff;}
-#section .sec1st h1{color: #fff;}
+#section .sec1st h3{color: #fff;font-size: 40px;}
+#section .sec1st h1{color: #fff;font-size: 60px;}
+#section .sec1st .menu01{float: left;}
+#section .sec1st .menu02{float: left;}
+#section .sec1st .menu03{float: left;}
+#section .sec1st .menu04{float: left;}
+
+
+
 #section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
 
 #section .sec2st>ul>li{background: white;}
