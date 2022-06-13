@@ -52,6 +52,8 @@
     background-size: auto,cover;
 }
 #section .sec1st{height: 140px;background-color: rgb(255, 184, 184);margin-bottom: 50px;}
+#section .sec1st h3{color: #fff;}
+#section .sec1st h1{color: #fff;}
 #section .sec2st>ul>li{float: left;width: 300px;height: 225px;}
 
 #section .sec2st>ul>li{background: white;}
