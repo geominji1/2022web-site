@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서경대학교</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide1").bxSlider({
+                controls:false
+            });
+
+            $(".next").click(function(){
+                slide.goToNextSlide();
+            });
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            });
+
+        })
+    </script>
 
 </head>
 <body>
@@ -58,49 +79,74 @@
         <div class="sec1st container">
             <h3>함께 나누며 세상을 이끌어</h3>
             <h1>세계로향하는 서경대학교</h1>
-            <nav class="menu01">
+            <nav class="menu">
                 <ul>
                     <li><a href="#"><img src="images/Group 1.png" alt=""></a>
-                    <a href="#">입학절차안내</a></li>
+                       <p>입학절차안내</li></p> 
                 </ul>
-            </nav>    
-
-            <nav class="menu02">
                 <ul>
                     <li><a href="#"><img src="images/Group 2.png" alt=""></a>
-                    <a href="#">입학설명회</a></li>
+                        <p>입학설명회</li></p>
                 </ul>
-            </nav>    
-
-            <nav class="menu03">
                 <ul>
                     <li><a href="#"><img src="images/Group 3.png" alt=""></a>
-                    <a href="#">장학제도</a></li>
+                        <p>장학제도</li></p>
                 </ul>
-            </nav>    
-
-            <nav class="menu04">
                 <ul>
                     <li><a href="#"><img src="images/Group 4.png" alt=""></a>
-                    <a href="#">증명서발급</a></li>
+                        <p>증명서발급</li></p>
                 </ul>
-            </nav>           
+            </nav>
+        
         </div>
 
 
         <div class="sec2st container">
             <!-- ul.clearfix>li*8>{$} -->
-            <ul class="clearfix">
-                <li>1 slide</li>
+                <ul class="clearfix">
+                <li>slide1</li>
+                <div class="visual">
+                    <ul class="slide1">
+                        <li>
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    <h3>한국에서
+                                    <br>시작하는
+                                    <br>새로운 꿈</h3>
+                                    <a href="#" class="btn">자세히보기></a>
+                                </div>
+                            </div>
+                            <img src="images/slide01.jpg" alt="">
+                        </li>
+                        <li>
+                            <div class="txtWrap"><!-- 1280 poa -->
+                                <div class="txt">
+                                    <h3>서경대학교
+                                    <br>높은 취업율</h3>
+                                    <a href="#" class="btn">자세히보기></a>
+                                </div>
+                            </div>
+                            <img src="images/slide02.jpg" alt="">
+                        </li>
+                    </ul>
+                        <div class="next">
+                            <img src="images/next.png" alt="">
+                        </div>
+                        <div class="prev">
+                            <img src="images/prev.png" alt="">
+                        </div>
+                <ul class="clearfix">
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
                 <li>6</li>
                 <li>7</li>
-                <li>8 slide</li>
+                <li>slide8</li>
             </ul>
         </div>
     </section>
+
+   
 </body>
 </html>
