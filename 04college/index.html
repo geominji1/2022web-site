@@ -12,23 +12,6 @@
     <script src="../js/jquery.bxslider.js"></script>
 
 
-    <script>
-        $(document).ready(function(){
-            var slide = $(".slide1").bxSlider({
-                controls:false
-            });
-
-            $(".next").click(function(){
-                slide.goToNextSlide();
-            });
-
-            $(".prev").click(function(){
-                slide.goToPrevSlide();
-            });
-
-        })
-    </script>
-
 </head>
 <body>
     <header id="header"> <!-- 100% -->
@@ -105,48 +88,85 @@
             <!-- ul.clearfix>li*8>{$} -->
                 <ul class="clearfix">
                 <li>slide1</li>
-                <div class="visual">
-                    <ul class="slide1">
-                        <li>
-                            <div class="txtWrap">
-                                <div class="txt">
-                                    <h3>한국에서
-                                    <br>시작하는
-                                    <br>새로운 꿈</h3>
-                                    <a href="#" class="btn">자세히보기></a>
-                                </div>
-                            </div>
-                            <img src="images/slide01.jpg" alt="">
-                        </li>
-                        <li>
-                            <div class="txtWrap"><!-- 1280 poa -->
-                                <div class="txt">
-                                    <h3>서경대학교
-                                    <br>높은 취업율</h3>
-                                    <a href="#" class="btn">자세히보기></a>
-                                </div>
-                            </div>
-                            <img src="images/slide02.jpg" alt="">
-                        </li>
+
+                <li>
+                    <div class="textWrap">
+                        <h2>APP으로
+                        <br>스마트 도서관
+                        <br>바로이용하자!</h2>
+
+                        <h3>모바일 열람증은
+                            <br>도서관 자료실/도서대출 등에
+                            <br>사용 할 수 있습니다.</h3>
+                    </div>
+                    <button>자세히 보기</button>
+                
+
+
+                </li>
+
+                <li>
+                    <h3>공지사항</h3>
+                    <div class="ikonWrap">
+                        <ul class ="ikon">
+                    <li><a href="#"><img src="images/ikon03.png" alt=""><p>국제교류<br>센터</p></a></li>
+                    <li><a href="#"><img src="images/ikon04.png" alt=""><p>원격지원<br>시스템</p></a></li>
+                    <li><a href="#"><img src="images/ikon05.png" alt=""><p>예산/결산<br>공고</p></a></li>
+                </ul>
+                </div>
+                </li>
+
+                <li>
+                    <h3>공지사항</h3>
+                    <div class="bar"></div>
+                    <ul class="notice">
+                        <li><a href="#"><p>[공지] 서경대학교 웹진어쩌구저쩌구</p><span>2022-06-12</span></a></li>
+                        <li><a href="#"><p>[보도]우수대학교 선정 수상</p><span>2022-06-13</span></a></li>
+                        <li><a href="#"><p>[공지]대학입시 설명회</p><span>2022-06-14</span></a></li>
+                        <li><a href="#"><p>[공지] 2022년 2학기 성적어쩌구저쩌구</p><span>2022-06-15</span></a></li>
                     </ul>
-                        <div class="next">
-                            <img src="images/next.png" alt="">
-                        </div>
-                        <div class="prev">
-                            <img src="images/prev.png" alt="">
-                        </div>
-                <ul class="clearfix">
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
+                </li>
+
+
+                <li>
+                  <h3>공지사항</h3>
+                  <a href="#"><img src="images/skun4.jpg" alt=""></a>
+                  <a href="#"><p>서경 대학교는 2023년도 신입생 입학식을 3월 2일(목) 본교 종합체육관</p></a>
+                  <ul class="sns">
+                    <li><a href="#"><img src="images/01.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/02.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/03.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/04.png" alt=""></a></li>
+                  </ul>
+                </li>
+
+
+                <li>
+                 <div class="box">
+                 <a href="#"><h3>캠퍼스 투어</h3></a>
+                </div> 
+                </li>
+
+
+                <li>
+                    <ul><div class="playButton">
+                        <a href="#"><img src="images/button.png" alt=""></a>
+                    </div>
+                </ul>
+                   
+                </li>
+
+
+
                 <li>slide8</li>
             </ul>
         </div>
     </section>
-
+   
+    <footer>
+        <p>[02713] 서울시 성북구 서경로 124(정릉동 16-1)/Tel : 02 940 7114/Fax : 02 919 0345
+           <br>Copyright 2012 SKU All Right Reserved./대학정보공시/개인정보처리방침/이메일무단수집거부</p>
+    </footer>
    
 </body>
 </html>
