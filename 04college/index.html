@@ -12,6 +12,26 @@
     <script src="../js/jquery.bxslider.js"></script>
 
 
+
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide1").bxSlider({
+                controls:false
+            });
+
+            $(".next").click(function(){
+                slide.goToNextSlide();
+            });
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            });
+
+        })
+
+
+    </script>
+
 </head>
 <body>
     <header id="header"> <!-- 100% -->
@@ -60,26 +80,25 @@
     </header>
     <section id="section">
         <div class="sec1st container">
+            <div class="box">
             <h3>함께 나누며 세상을 이끌어</h3>
             <h1>세계로향하는 서경대학교</h1>
-            <nav class="menu">
+             <div class="menu">
                 <ul>
                     <li><a href="#"><img src="images/Group 1.png" alt=""></a>
-                       <p>입학절차안내</li></p> 
-                </ul>
-                <ul>
+                       <p>입학절차안내</p> </li>
+               
                     <li><a href="#"><img src="images/Group 2.png" alt=""></a>
-                        <p>입학설명회</li></p>
-                </ul>
-                <ul>
+                        <p>입학설명회</p></li>
+            
                     <li><a href="#"><img src="images/Group 3.png" alt=""></a>
-                        <p>장학제도</li></p>
-                </ul>
-                <ul>
+                        <p>장학제도</p></li>
+                
                     <li><a href="#"><img src="images/Group 4.png" alt=""></a>
-                        <p>증명서발급</li></p>
+                        <p>증명서발급</p></li>
                 </ul>
-            </nav>
+            </div>
+            </div>
         
         </div>
 
@@ -87,7 +106,42 @@
         <div class="sec2st container">
             <!-- ul.clearfix>li*8>{$} -->
                 <ul class="clearfix">
-                <li>slide1</li>
+                <li>
+                    <ul class="slide1">
+                        <li>
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    <h3>한국에서
+                                        <br> 시작하는
+                                        <br> 새로운 꿈 </h3>
+                                        <a href="#">자세히 보기 ></a>
+                                </div>
+                            </div>
+                            <img src="images/slide01.png" alt="">
+                        </li>
+                        <li>
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    <h3>한국에서
+                                        <br> 시작하는
+                                        <br> 새로운 꿈 </h3>
+                                        <a href="#">자세히 보기 ></a>
+                                </div>
+                            </div>
+                            <img src="images/slide02.jpg" alt="">
+                        </li>
+                    </ul>
+                    <div class="next">
+                        <img src="../images/next.png" alt="">
+                    </div>
+                    <div class="prev">
+                        <img src="../images/prev.png" alt="">
+                    </div>
+                  
+                </li>
+
+
+
 
                 <li>
                     <div class="textWrap">
@@ -98,22 +152,19 @@
                         <h3>모바일 열람증은
                             <br>도서관 자료실/도서대출 등에
                             <br>사용 할 수 있습니다.</h3>
-                    </div>
-                    <button>자세히 보기</button>
-                
-
-
+                            <div class="buttonWrap">
+                 
+                    <button> 자세히 보기 > </button>   </div></div>
                 </li>
+                 
 
                 <li>
-                    <h3>공지사항</h3>
-                    <div class="ikonWrap">
+                    <h3>HOT LINK</h3>
                         <ul class ="ikon">
                     <li><a href="#"><img src="images/ikon03.png" alt=""><p>국제교류<br>센터</p></a></li>
                     <li><a href="#"><img src="images/ikon04.png" alt=""><p>원격지원<br>시스템</p></a></li>
                     <li><a href="#"><img src="images/ikon05.png" alt=""><p>예산/결산<br>공고</p></a></li>
-                </ul>
-                </div>
+                        </ul>
                 </li>
 
                 <li>
@@ -129,9 +180,11 @@
 
 
                 <li>
-                  <h3>공지사항</h3>
+                  <h3>SNS NEWS</h3>
+                  <div class="newsWrap">
                   <a href="#"><img src="images/skun4.jpg" alt=""></a>
-                  <a href="#"><p>서경 대학교는 2023년도 신입생 입학식을 3월 2일(목) 본교 종합체육관</p></a>
+                  <a href="#"><p>서경 대학교는 2023년도 신입생 입학식을 3월 2일(목) 본교 종합체육</p></a>
+                  </div>  
                   <ul class="sns">
                     <li><a href="#"><img src="images/01.png" alt=""></a></li>
                     <li><a href="#"><img src="images/02.png" alt=""></a></li>
