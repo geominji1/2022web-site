@@ -74,7 +74,11 @@
 #section .sec2st>ul>li:nth-child(2n){background-color:pink;}
 
 #section .sec2st>ul>li:nth-child(1){width: 900px;height: 450px;background-image: url(../images/slide01.png);position: relative;}
-
+#section .sec2st>ul>li:nth-child(1) .txtWrap{position: absolute; padding: 80px 80px;color:white;}
+#section .sec2st>ul>li:nth-child(1) .txtWrap h3{font-size: 60px;line-height: 80px;margin-bottom: 30px;}
+#section .sec2st>ul>li:nth-child(1) .txtWrap a{ background-color: #1e672c; 
+    color: #fff; border: 1px
+    font-size: 14px; padding: 10px 30px;cursor:pointer}
 
 
 
@@ -95,7 +99,7 @@
     background: #1e672c;
 }
 
-.prev,.next{position: absolute;top: 90%;margin-top: -90px;cursor:pointer}
+.prev,.next{position: absolute;top: 60%;margin-top: -60px;cursor:pointer}
 .next{right: 0;}
 
 #section .sec2st>ul>li:nth-child(2){height: 450px;background-image: url(../images/skun2.png);padding: 20px;}
