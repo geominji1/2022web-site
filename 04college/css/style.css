@@ -77,8 +77,8 @@
 #section .sec2st>ul>li:nth-child(1) .txtWrap{position: absolute; padding: 80px 80px;color:white;}
 #section .sec2st>ul>li:nth-child(1) .txtWrap h3{font-size: 60px;line-height: 80px;margin-bottom: 30px;}
 #section .sec2st>ul>li:nth-child(1) .txtWrap a{ background-color: #1e672c; 
-    color: #fff; border: 1px
-    font-size: 14px; padding: 10px 30px;cursor:pointer}
+    color: #fff; 
+    font-size: 17px; padding: 10px 30px;cursor:pointer}
 
 
 
