@@ -44,7 +44,7 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px}
 }
 .mainMenuWrap .mainMenu li:last-child{border-right: 1px solid #336DAC;}
 .mainMenuWrap .mainMenu li a{
-    display: block;line-height:45px;color:#EAEEF4;text-align: center;
+    display: block;line-height:45px;color:#EAEEF4;text-align: center;letter-spacing: -1px;
 }
 .mainMenuWrap .mainMenu li a:hover{
     background: #336DAC;
