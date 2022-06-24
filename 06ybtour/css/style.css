@@ -1,0 +1,39 @@
+@charset "utf-8";
+html,body{height: 100%;}
+        body{
+            background-image: url(../images/01bgY.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            
+           
+        }
+
+/* header*/
+.headerWrap{background-color:#ffff73;height: 87px;
+            display: flex; justify-content: center;
+            position: relative;
+}
+.header{position: absolute; width: 980px; height: 87px;}
+.header li{width: calc( 100% / 3 ); float: left; padding: 23px 0;}
+.header form{position: relative;}
+p.title,.icon{position: absolute;top: 48%;transform:translateY(-44%)}
+p.title{font-weight: bold; left: 335px;}
+.icon{right: 370px;}
+.icon{width: 20px;height: 15px;
+    align-items: center;font-size:12px;
+}
+.inp{
+    width: 288px;height: 32px;text-indent: 90px; margin-top: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px; background-color: rgb(255, 255, 255); 
+}
+.inp:focus{outline:none}
+
+.header h4{font-size: 28px; margin-right: 16px; float: left;}
+.sns a {float: left; padding: 10px 0; margin-right: 3px;}
+
+/* nav */
+.mainMenu{height: 60px;bg}
