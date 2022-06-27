@@ -1,7 +1,7 @@
 @charset "utf-8";
 html,body{height: 100%;}
         body{
-            background-image: url(../images/01bgY.jpg);
+            background-image: url(../images/01bgB.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -36,4 +36,13 @@ p.title{font-weight: bold; left: 335px;}
 .sns a {float: left; padding: 10px 0; margin-right: 3px;}
 
 /* nav */
-.mainMenu{height: 60px;bg}
+.mainMenu{ height: 60px; background-color: #fff;}
+.mainMenu ul{width: 981px;margin: 0 auto;}
+.mainMenu li{float: left;width: calc( 100% / 6 );display: flex;
+             justify-content: center; padding: 19px; position: relative;
+             border-left:1px solid #eee}
+.mainMenu li:last-child{border-right:1px solid #eee}
+.mainMenu li:hover{background-color: #ffcb31;transition:0.3s}
+.mainMenu li a{font-size: 17px; text-align: center;}
+.line{background-color: #ffcb31;height: 4px; }
+
