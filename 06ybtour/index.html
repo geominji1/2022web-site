@@ -14,6 +14,18 @@
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            var slide = $(".slide01").bxSlider({
+                controls:false,
+                pagerCustom:".slideTap",
+                mode:"vertical"
+            });
+            
+        });
+
+    </script>
+
 </head>
 <body>
 <header>
@@ -46,23 +58,198 @@
     </div>
 </header>
 
+
+
 <nav>
     <div class="mainMenu">
         <ul class="claerfix">
-            <li><a href="#">여행도시</a></li>
-            <li><a href="#">호텔예약</a></li>
-            <li><a href="#">렌트카</a></li>
-            <li><a href="#">여행TIP</a></li>
-            <li><a href="#">회사소개</a></li>
-            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#"><h4>여행도시</h4></a></li>
+            <li><a href="#"><h4>호텔예약</h4></a></li>
+            <li><a href="#"><h4>렌트카</h4></a></li>
+            <li><a href="#"><h4>여행TIP</h4></a></li>
+            <li><a href="#"><h4>회사소개</h4></a></li>
+            <li><a href="#"><h4>커뮤니티</h4></a></li>
         </ul>
     </div>
 </nav>
-<div class="line"></div>
+<div class="line01"></div>
+
+
 
 <section>
-    <div class="form"></div>
+    <div class="sec01 clearfix">
+        <div class="form">
+            <ul class="slide01 claerfix">
+                <li>
+                    <form action="index.html" method="get">
+                            <legend class="blind">가고싶은 나라를 입력해주세요</legend>
+                            <div class="field">
+                                <input type="text" name="country" id="country" class="inp-field" placeholder="입력하세요">
+                            </div>
+
+                            <legend class="blind">출발일</legend>
+                            <div class="field">
+                                <input type="text" name="start" id="start" class="inp-field" placeholder="2022/06/01">
+                            </div>
+
+                            <legend class="blind">도착일</legend>
+                            <div class="field">
+                                <input type="text" name="arrival" id="arrival" class="inp-field" placeholder="2022/06/30">
+                            </div>
+
+                            <legend class="blind">좌석등급</legend>
+                            <div class="field">
+                                <input type="text" name="flightClass" id="flightClass" class="inp-field" placeholder="일반석">
+                            </div>
+
+                            <legend class="blind">성인</legend>
+                            <div class="field">
+                                <input type="text" name="adult" id="adult" class="inp-field" placeholder="1">
+                            </div>
+
+                            <legend class="blind">아이</legend>
+                            <div class="field">
+                                <input type="text" name="child" id="child" class="inp-field" placeholder="2">
+                            </div>
+
+                            <a href="#" class="btn"> <h4>검색하기</h4> </a>
+                    </form>
+                </li>
+
+                <li>
+                    <form action="index.html" method="get">
+                            <legend class="blind">가고싶은 나라를 입력해주세요</legend>
+                            <div class="field">
+                                <input type="text" name="country" id="country" class="inp-field" placeholder="입력하세요">
+                            </div>
+
+                            <legend class="blind">출발일</legend>
+                            <div class="field">
+                                <input type="text" name="start" id="start" class="inp-field" placeholder="2022/06/01">
+                            </div>
+
+                            <legend class="blind">도착일</legend>
+                            <div class="field">
+                                <input type="text" name="arrival" id="arrival" class="inp-field" placeholder="2022/06/30">
+                            </div>
+
+                            <legend class="blind">좌석등급</legend>
+                            <div class="field">
+                                <input type="text" name="flightClass" id="flightClass" class="inp-field" placeholder="일반석">
+                            </div>
+
+                            <legend class="blind">성인</legend>
+                            <div class="field">
+                                <input type="text" name="adult" id="adult" class="inp-field" placeholder="1">
+                            </div>
+
+                            <legend class="blind">아이</legend>
+                            <div class="field">
+                                <input type="text" name="child" id="child" class="inp-field" placeholder="2">
+                            </div>
+
+                            <a href="#" class="btn"> <h4>검색하기</h4> </a>
+                    </form>
+                </li>
+
+                <li>
+                    <form action="index.html" method="get">
+                            <legend class="blind">가고싶은 나라를 입력해주세요</legend>
+                            <div class="field">
+                                <input type="text" name="country" id="country" class="inp-field" placeholder="입력하세요">
+                            </div>
+
+                            <legend class="blind">출발일</legend>
+                            <div class="field">
+                                <input type="text" name="start" id="start" class="inp-field" placeholder="2022/06/01">
+                            </div>
+
+                            <legend class="blind">도착일</legend>
+                            <div class="field">
+                                <input type="text" name="arrival" id="arrival" class="inp-field" placeholder="2022/06/30">
+                            </div>
+
+                            <legend class="blind">좌석등급</legend>
+                            <div class="field">
+                                <input type="text" name="flightClass" id="flightClass" class="inp-field" placeholder="일반석">
+                            </div>
+
+                            <legend class="blind">성인</legend>
+                            <div class="field">
+                                <input type="text" name="adult" id="adult" class="inp-field" placeholder="1">
+                            </div>
+
+                            <legend class="blind">아이</legend>
+                            <div class="field">
+                                <input type="text" name="child" id="child" class="inp-field" placeholder="2">
+                            </div>
+
+                            <a href="#" class="btn"> <h4>검색하기</h4> </a>
+                    </form>
+                </li>
+
+                <li>
+                    <form action="index.html" method="get">
+                            <legend class="blind">가고싶은 나라를 입력해주세요</legend>
+                            <div class="field">
+                                <input type="text" name="country" id="country" class="inp-field" placeholder="입력하세요">
+                            </div>
+
+                            <legend class="blind">출발일</legend>
+                            <div class="field">
+                                <input type="text" name="start" id="start" class="inp-field" placeholder="2022/06/01">
+                            </div>
+
+                            <legend class="blind">도착일</legend>
+                            <div class="field">
+                                <input type="text" name="arrival" id="arrival" class="inp-field" placeholder="2022/06/30">
+                            </div>
+
+                            <legend class="blind">좌석등급</legend>
+                            <div class="field">
+                                <input type="text" name="flightClass" id="flightClass" class="inp-field" placeholder="일반석">
+                            </div>
+
+                            <legend class="blind">성인</legend>
+                            <div class="field">
+                                <input type="text" name="adult" id="adult" class="inp-field" placeholder="1">
+                            </div>
+
+                            <legend class="blind">아이</legend>
+                            <div class="field">
+                                <input type="text" name="child" id="child" class="inp-field" placeholder="2">
+                            </div>
+
+                            <a href="#" class="btn"> <h4>검색하기</h4> </a>
+                    </form>
+                </li>
+            </ul>
+            <div class="slideTap">
+                <a href="#" data-slide-index="0">공항예약</a>
+                <a href="#" data-slide-index="1">호텔예약</a>
+                <a href="#" data-slide-index="2">렌트카</a>
+                <a href="#" data-slide-index="3">휴양지</a>
+            </div>
+        </div>
+
+        <div class="textWrap">
+            <div class="text">
+                <h1>TRAVEL GO</h1>
+                <div class="line02"></div>
+                <h3>지금,여행이 떠나고 싶다면? <br>
+                노랑풍선과 여행을 떠나자!</h3>
+            </div>
+        </div>
+        
+        <div class="content">
+            <a href="#"><img src="images/03ttt01.jpg" alt=""></a>
+            <a href="#"><div class="box"><h4>프랑스</h4><h4>￦1,900,000~ ></h4></div></a>
+        </div>
+
+    </div>
 </section>
+
+
 
 
     
