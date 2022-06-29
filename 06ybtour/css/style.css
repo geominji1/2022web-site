@@ -76,11 +76,12 @@ p.title{font-weight: bold; left: 335px;}
     margin-bottom: 0;;
 }
 
-.textWrap{ }
-.text{width: 351px;height: 161px; background-color: #fff;
-    float: left;margin-top: 35px; margin-left: 41px;}
+.textWrap{width: 482px;height: 300px; float: left; }
+.text{margin-top: 35px; margin-left: 41px;}
 .text h1{font-size: 64px; }
-.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0); margin-left:260px}
+.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0); margin-left:260px; margin-bottom: 20px;}
 .text h3{font-size: 28px;line-height: 37px;}
 
-.content{background-color: rgb(124, 81, 81);}
+.content{background-color: rgb(255, 254, 254);}
+.content img{position: relative;}
+.content .box{position: absolute;}
