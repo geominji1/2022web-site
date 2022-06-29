@@ -5,10 +5,6 @@ html,body{height: 100%;}
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            overflow: hidden;
-
-            
-           
         }
 
 /* header*/
@@ -47,13 +43,13 @@ p.title{font-weight: bold; left: 335px;}
 .line01{background-color: #ffcb31;height: 4px; }
 
 /* sec01 */
-.sec01{width: 982px;height: 557px;margin: 0 auto; 
-    background-color: #fff; margin-top: 56px;}
-.form{width: 482px;height: 300px;background-color: rgb(255, 168, 168);position: relative;float: left;}
+.sec01{width: 982px;height: 532px;margin: 0 auto; 
+        margin-top: 56px;}
+.form{width: 482px;height: 300px;background-color: rgb(255, 255, 255);position: relative;float: left;}
 .slide01 ul{margin: 0 auto;}
 .slide01 li{left: 200px;float: left;}
 
-
+ 
 
 
 
@@ -79,9 +75,30 @@ p.title{font-weight: bold; left: 335px;}
 .textWrap{width: 482px;height: 300px; float: left; }
 .text{margin-top: 35px; margin-left: 41px;}
 .text h1{font-size: 64px; }
-.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0); margin-left:260px; margin-bottom: 20px;}
+.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0); 
+                margin-left:260px; margin-bottom: 20px;}
 .text h3{font-size: 28px;line-height: 37px;}
 
-.content{background-color: rgb(255, 254, 254);}
-.content img{position: relative;}
-.content .box{position: absolute;}
+.content{float: left; padding: 0 17px 0 0;  }
+.content img{padding: 16px 0 0;}
+
+.content .box{position: absolute;background-color:#ffcb31;
+   ;width: 233px; margin-top: -25px;}
+.content ul{padding: 15px;cursor: pointer; }
+.content li{float: left; margin-left: 10px;}
+.content li h3{font-size: 16px; color: rgb(0, 0, 0);}
+.content li h4{font-size: 16px; color: #1f3b96;}
+.content .box img{position: absolute; left: 200px; bottom: 16px; }
+
+
+/* sec02 */
+.sec02{width: 981px;height: 495px;background-color: rgb(84, 230, 230);
+            margin: 0 auto; margin-top: 16px;     
+}
+
+.sliderWrap{width: 234px;height: 240px;}
+.sliderWrap .box{position: absolute;background-color:#ffcb31;
+    ;width: 234px; margin-top: -70px;}
+.sliderWrap ul{padding: 15px;cursor: pointer;}
+
+
