@@ -43,35 +43,39 @@ p.title{font-weight: bold; left: 335px;}
 .line01{background-color: #ffcb31;height: 4px; }
 
 /* sec01 */
-.sec01{width: 982px;height: 532px;margin: 0 auto; 
-        margin-top: 56px;}
-.form{width: 482px;height: 300px;background-color: rgb(255, 255, 255);position: relative;float: left;}
-.slide01 ul{margin: 0 auto;}
-.slide01 li{left: 200px;float: left;}
+.sec01{width: 982px;height: 532px;margin: 0 auto; margin-top: 56px;}
+.form{width: 482px;height: 300px;background-color: rgb(255, 255, 255);
+    position: relative;float: left;}
+.formSlideWrap{ width: 350px; height: 300px;
+    position: absolute; right: -9px;padding: 10px;}
+.slide01 ul{ }
+.slide01 li{height: 300px;  text-align: center; display: block;}
 
-
-
-.slide fieldset{border: 0 none;}
-.slide .blind{display: block;position: absolute;left: 0;top: -999px;}
-.slide form{width: 400px;margin: 0 auto}
-.field label{display: block;padding: 5px 0;}
-.field select{
-    width: 100%;height: 40px;font-size: 1em;
-    padding: 0 1em;
-    border-radius: 3px;
-}
+fieldset{outline:  none ;}
+.slide01 .blind{display: block;position: absolute;left: 0;top: -999px;}
+.slide01 form{width: 300px;margin: 0 auto;}
+.field label{display: block;padding: 5px 0;}.field select{
+            width: 100%;height: 40px;font-size: 1em;
+            padding: 0 1em;
+            border-radius: 3px;
+        }
 .field select:focus{outline: none;}
 .field.date,.field.air{display: flex;position: relative;}
 
 .field div{width: calc( ( 100% - 10px ) / 2 );}
 .field div:nth-of-type(1){margin-right: 10px;}
 .field .inp-field{
-    width: 100%;font-size: 1em;height: 40px;
-    text-align: right;padding: 0 10px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
+            width: 100%;font-size: 1em;height: 40px;
+            text-align: right;padding: 0 10px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
 .field.date .inp-field:focus{outline: none;}
+button{font-size: 20px; padding: 10px 30px; margin-top: 12px; color: #1f3b96; background-color: #ffcb31; 
+    border-radius: 9px; border: none; cursor: pointer; }
+
+
+
 
 
 
@@ -88,7 +92,7 @@ p.title{font-weight: bold; left: 335px;}
 
 
 .bx-wrapper {
-    -moz-box-shadow: 0 0 0px #ccc;
+    -moz-box-shadow: 10px 0 0px #ccc;
     -webkit-box-shadow: 0 0 0px #ccc;
     box-shadow: 0 0 0px #ccc;
     border: 0px none;
@@ -98,7 +102,7 @@ p.title{font-weight: bold; left: 335px;}
 .textWrap{width: 482px;height: 300px; float: left; }
 .text{margin-top: 35px; margin-left: 41px; }
 .text h1{font-size: 64px; }
-.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0); 
+.text .line02{width: 83px; height: 5px;background-color: rgb(0, 0, 0);
                 margin-left:260px; margin-bottom: 20px;}
 .text h3{font-size: 28px;line-height: 37px;}
 
@@ -116,7 +120,7 @@ p.title{font-weight: bold; left: 335px;}
 
 /* sec02 */
 .sec02{width: 981px;height: 495px;
-            margin: 0 auto; margin-top: 40px;     
+            margin: 0 auto; margin-top: 40px;
 }
 
 .travel{padding: 0 15px 0 0;float: left;}
@@ -158,6 +162,17 @@ p.title{font-weight: bold; left: 335px;}
 
 .travel:nth-child(4){padding: 0 0 14px ;}
 .travel:nth-child(8){padding:  0;}
+
+
+
+/* footer */
+
+.footerWrap{height: 113px;width: 980px;margin: 0 auto;}
+.footerWrap ul{}
+.footerWrap li{float: left; padding: 29px 10px 20px; cursor: pointer; }
+.footerWrap li:first-child{padding: 29px 0 20px;}
+.footerWrap p{font-size: 12px; color: rgb(129, 129, 129);}
+
 
 
 .balloon01{
