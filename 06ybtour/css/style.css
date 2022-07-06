@@ -39,9 +39,10 @@ p.title{font-weight: bold; left: 335px;}
              border-left:1px solid #eee}
 .mainMenu li:last-child{border-right:1px solid #eee}
 
-.mainMenu>ul>li>a:active{color: #1f3b96;}
-.mainMenu ul li:hover{background-color:#ffcb31 ;transition:0.3s;color: #1f3b96;}
+
+.mainMenu ul li:hover{background:#ffcb31 ;transition:0.3s;}
 .mainMenu li a:hover{color: #ffffff;}
+.mainMenu>ul>li>a:active{background: #ffcb31;}
 
 .mainMenu li a{font-size: 17px; text-align: center;}
 .line01{background-color: #ffcb31;height: 4px;  }
@@ -218,4 +219,3 @@ button{font-size: 20px; padding: 10px 30px; margin-top: 12px; color: #1f3b96; ba
 
 /* common  */
 .container{width: 980px;margin: 0 auto;}
-.py-8{padding: 5em 0 !important;}
