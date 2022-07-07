@@ -69,7 +69,7 @@ p.title{font-weight: bold; left: 335px;}
 .slide01 ul{ }
 .slide01 li{height: 300px;  text-align: center; display: block;}
 
-fieldset{outline:  none ;}
+fieldset{border:  none ;}
 .slide01 .blind{display: block;position: absolute;left: 0;top: -999px;}
 .slide01 form{width: 300px;margin: 0 auto;}
 .field label{display: block;padding: 5px 0;}.field select{
