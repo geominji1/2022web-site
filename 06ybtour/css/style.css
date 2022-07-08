@@ -66,7 +66,6 @@ p.title{font-weight: bold; left: 335px;}
     position: relative;float: left;}
 .formSlideWrap{ width: 350px; height: 300px;
     position: absolute; right: -9px;padding: 10px;}
-.slide01 ul{ }
 .slide01 li{height: 300px;  text-align: center; display: block;}
 
 fieldset{border:  none ;}
@@ -181,10 +180,6 @@ button{font-size: 20px; padding: 10px 30px; margin-top: 12px; color: #1f3b96; ba
     display: none;
 }
 
-
-
-.travel{float: left; padding: 0 15px 0 0;  }
-
 .travel .box{position: absolute;background-color:#ffcb31;
    ;width: 234px; margin-top: -50px;}
 .travel ul{padding: 15px;cursor: pointer; }
@@ -196,7 +191,31 @@ button{font-size: 20px; padding: 10px 30px; margin-top: 12px; color: #1f3b96; ba
 .travel:nth-child(4){padding: 0 0 14px ;}
 .travel:nth-child(8){padding:  0;}
 
+.weather {overflow: hidden;}
+.weather .box{position: absolute;background-color:rgba(0, 0, 0, 0.5);
+    ;width: 234px; height: 65px; margin-top: -65px;}
+.weather img{transition:0.3s;}    
+.weather h2{position: absolute; 
+    color: #fff; padding: 10px 70px; font-size: 25px;cursor: pointer; }
+.weather ul{padding: 12px;cursor: pointer; }
+.weather li h3{color: #fff;}
+.weather li h4{color: #fff;}
+.weather li h5{color: #fff;}
 
+.weather:hover img{transform:scale(1.1) rotate(-0deg)}
+
+
+.review {overflow: hidden;}
+.review .box{position: absolute;background-color:rgba(0, 0, 0, 0.5);
+    ;width: 234px; height: 240px; margin-top: -240px;}
+.review img{transition:0.3s;}    
+.review ul{padding: 12px;cursor: pointer; }
+.review li h3{color: #fff;font-size: 20px;}
+.review li h4{color: #fff;}
+.review li h5{color: #ffffff; padding:  60px  8px;  text-align: center;
+    font-size: 15px;}
+
+.review:hover img{transform:scale(1.1) rotate(-0deg)}
 
 
 /* citytour */
