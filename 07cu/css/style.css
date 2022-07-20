@@ -1,0 +1,112 @@
+@charset "utf-8";
+/********** css responsive init  **********/
+.container{width: 1240px;margin: 0 auto}
+
+/* header  */
+#header{position:fixed;width: 100%;}
+
+.navbarWrap{display: flex;padding:20px 0 0 0}
+.navbarWrap img{padding: 20px 0;}
+.navbar{margin-left: auto;}
+.navbar>ul{display: flex;height: 100%;}
+.navbar>ul>li{position: relative; }
+.navbar>ul>li>a{
+    display:flex;height: 100%;justify-content: center;align-items: center;
+    padding: 20px 30px;font-size: 21px;font-weight: bold;color: #fff;
+}
+
+.language{display: flex;}
+.language div{color: #fff; font-size: 17px; display: flex; 
+    justify-content: center; align-items: center;
+    cursor: pointer;
+}
+.language>.active{background: #37d243;}
+.language .eng,.kor{width: 64px;height: 64px;border: 1px solid #37d243;}
+
+.navbar>ul>li .aBar{
+    position: absolute;width:100%;height: 5px;background:#ffffff;bottom: 7px;
+    transform:scale(0);
+    transition: 0.3s;
+}
+
+.navbar>ul>li .submenu{
+    background-color: #37d243; 
+    position: absolute;top:60px;width: 100%;padding: 10px 10px 20px 10px;
+    border-radius:0 0 8px 8px;transform:translateY(20px);transition: 0.3s;
+    opacity:0;visibility: hidden;box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.submenu li{display: block;line-height: 30px;text-align: center;}
+.submenu li a{color: #fff;}
+.submenu li a:hover{border-bottom: 1px solid #fff ;}
+.navbar>ul>li.on .submenu{transform:translateY(0px);opacity: 1;visibility: visible;}
+.navbar>ul>li.on .aBar{transform: scale(1);}
+
+
+.toggle{
+    width:40px;height: 40px;
+    justify-content: center;align-items: center;
+    display: none;
+}
+.toggle div{
+    width: 24px;height: 3px;background: rgb(255, 255, 255);position: absolute;border-radius: 2px;
+}
+.toggle .bar1{transform:translateY(-8px);}
+.toggle .bar3{transform:translateY(8px);}
+
+.navbarClone,.overlay{display: none;}
+
+
+
+/* visual   */
+.visualWrap{
+    height: 100vh;
+    background-image: url(../images/header_slide01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/********** css responsive  **********/
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+    .container{width: 100%;}
+}
+
+@media (max-width: 991px) {
+    .navbar>ul>li>a{padding: 20px 15px;}
+}
+
+@media (max-width: 767px) {
+    .navbar{display: none;}
+    .navbarWrap{padding: 10px 20px;}
+    .toggle{display: flex;margin-left: auto;}
+    
+    .navbarClone{
+        position: fixed;
+        width:90%;
+        height: 100%;
+        top: 0;left: -100%;
+        background: pink;
+        display: block;
+        transition:0.5s
+
+    }
+    .overlay{
+        display: none;
+        position: fixed;
+        width: 100%;height: 100%;
+        left: 0;top: 0;
+        background: #000;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 575px) {
+
+}

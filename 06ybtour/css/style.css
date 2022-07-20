@@ -42,7 +42,7 @@ p.title{font-weight: bold; left: 335px;}
 
 .mainMenu ul li:hover{background:#ffcb31 ;transition:0.3s;}
 .mainMenu li a:hover{color: #ffffff;}
-.mainMenu>ul>li>a:active{background: #ffcb31;}
+.mainMenu>ul>li>a.active{background: #ffcb31;}
 
 .mainMenu li a{font-size: 17px; text-align: center;}
 .line01{background-color: #ffcb31;height: 4px;  }
