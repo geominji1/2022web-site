@@ -21,3 +21,5 @@ $(".language div").click(function(){
 
     console.log($(this))
 })
+
+$(".navbar>ul").clone().appendTo(".mMenu")

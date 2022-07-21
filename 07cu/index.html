@@ -7,8 +7,11 @@
     <title>index</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/colorbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.colorbox-min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -18,7 +21,7 @@
                 <ul>
                     <li><a href="#">CU소개</a>
                         <ul class="submenu">
-                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">스토리</a></li>
                             <li><a href="#">디지털 사보</a></li>
                             <li><a href="#">CU 갤러리</a></li>
                         </ul>
@@ -83,6 +86,9 @@
         <div class="overlay"></div>
         <div class="navbarClone">
             menu
+            <div class="mMenu">
+
+            </div>
             
         </div>
     </header>
@@ -91,6 +97,70 @@
     <div class="visualWrap">
         slide
     </div>
+
+    <section class="contents container bg_gray">
+        <ul>
+            <li onclick="location.href='sub01_01.html'">
+                <div>
+                    <img src="images/sec1_icon01.png" alt="">
+                    <h3>간편식사</h3>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/shorts/Lq2h4nkoGjE" class="youtube"><img src="images/sec1_play.png" alt=""></a>
+            </li>
+            <li>3</li>
+            <li>
+                <div>
+                    <img src="images/sec1_icon02.png" alt="">
+                    <h3>즉석요리</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/sec1_icon03.png" alt="">
+                    <h3>스낵</h3>
+                </div>
+            </li>
+            <li style="background-image: url(images/sec1_contents01.jpg);">
+               <div class="txt-card">
+                <h3>포켓CU APP 사용해보세요🙋‍♀️</h3>
+                <h2>차별화된 서비스와<br>풍성항 혜택이 가득!</h2>
+               </div>
+            </li>
+            <li style="background-image: url(images/sec1_contents04.jpg);">
+                <div class="txt-card">
+                    <h3>성공스토리 (박준형 점주)</h3>
+                    <h2>넓어진 공간만큼<br>고객의 발길을<br>사로잡다.</h2>
+                </div>
+            </li>
+            <li style="background-image: url(images/sec1_contents02.jpg);">
+                <div class="txt-card">
+                    <h3>창업안내</h3>
+                    <h2>점주님들의 성공을<br>최우선으로 생각하는</h2>
+                </div>
+            </li>
+            <li >
+                <div>
+                    <img src="images/sec1_icon04.png" alt="">
+                    <h3>음료</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/sec1_icon05.png" alt="">
+                    <h3>생활용품</h3>
+                </div>
+            </li>
+            <li style="background-image: url(images/sec1_contents03.jpg);">
+                <div class="txt-card">
+                    <h3>고객센터</h3>
+                    <h2>상품문의, 창업상담 무엇을<br>도와드릴까요?</h2>
+                  </div>
+            </li>
+        </ul>
+    </section>
+
     <section style="height: 1000px;"></section>
 <script src="js/script.js"></script>
 </body>
