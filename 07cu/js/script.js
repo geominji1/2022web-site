@@ -23,3 +23,35 @@ $(".language div").click(function(){
 })
 
 $(".navbar>ul").clone().appendTo(".mMenu")
+
+
+$(".navbar>ul>li>a").click(function(e){
+    e.preventDefault();
+
+$(".navbar>ul>li>a").parent().find(".submenu").slideUp()
+
+if($(this).hasClass("active")){
+    $(".navbar>ul>li>a").removeClass("active");
+
+}else{
+    $(this).parent().find(".submenu").slideDown();
+    $(".navbar>ul>li>a").removeClass("active");
+            $(this).addClass("active"); 
+
+        
+}
+})
+
+
+
+
+$(document).ready(function(){
+    $(".modal").colorbox({
+        rel:'modal'
+    })
+    $(".youtube").colorbox({
+        iframe:true,
+        innerWidth:700,
+        innerHeight:394
+    })
+});

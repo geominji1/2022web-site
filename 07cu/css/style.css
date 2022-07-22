@@ -176,17 +176,34 @@
     .navbar{display: none;}
     .navbarWrap{padding: 10px 20px;}
     .toggle{display: flex;margin-left: auto;}
+    .language{display: none;}
     
     .navbarClone{
         position: fixed;
         width:90%;
         height: 100%;
         top: 0;left: -100%;
-        background: pink;
+        background: #37d243;
         display: block;
         transition:0.5s
+}
 
-    }
+
+  
+
+    
+
+    .mMenu{width: 200px;}
+    .mMenu>ul>li{padding: 20px;}
+    .mMenu>ul>li>a{display: flex;height: 40px;align-items: center;justify-content: space-between;padding: 0 16px;}
+    .mMenu>ul>li.hover .submenu{display: block;}
+    .mMenu>ul>li .submenu{padding: 10px 16px}
+    .mMenu>ul>li .submenu a{display: block;line-height: 30px;text-align: center;}
+    .mMenu>ul>li .submenu a:hover{color: #6837f8;border-bottom: 1px solid #6837f8;}
+
+    
+
+
     .overlay{
         display: none;
         position: fixed;
