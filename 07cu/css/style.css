@@ -3,12 +3,31 @@
 .container{width: 1240px;margin: 0 auto}
 
 /* header  */
-#header{position:fixed;;width: 100%;z-index:100 ;
-    
+#header{position:fixed;;width: 100%;z-index:100 ;}
+
+#header.fixed{
+    position: fixed;
+    padding: 5px 0 10px;
+    background-color:#fff
 }
+
+#header.fixed .navbar>ul>li>a{
+    color: #1d1829;
+}
+
+#header.fixed .navbarWrap .logo{display: none;}
+#header.fixed .navbarWrap .colorlogo{display: block;}
+#header.fixed .language div{color: #1d1829;}
+#header.fixed .navbar>ul>li .aBar{background:#37d243;}
+
+
+#header.fixed .navbar>ul>li .submenu{
+    background-color: #37d243;}
+
 
 .navbarWrap{display: flex;padding:20px 0 0 0}
 .navbarWrap img{padding: 20px 0;}
+.navbarWrap .colorlogo{display: none;}
 .navbar{margin-left: auto;}
 .navbar>ul{display: flex;height: 100%;}
 .navbar>ul>li{position: relative; }
@@ -160,6 +179,10 @@
 
 
 /********** css responsive  **********/
+
+
+
+
 @media (max-width: 1399px) {
 
 }
@@ -175,7 +198,7 @@
 @media (max-width: 767px) {
     .navbar{display: none;}
     .navbarWrap{padding: 10px 20px;}
-    .toggle{display: flex;margin-left: auto;}
+    .toggle{display: flex;margin-left: auto;padding: 32px;}
     .language{display: none;}
     
     .navbarClone{
@@ -186,20 +209,20 @@
         background: #37d243;
         display: block;
         transition:0.5s
-}
-
-
+    }
   
 
-    
-
     .mMenu{width: 200px;}
-    .mMenu>ul>li{padding: 20px;}
-    .mMenu>ul>li>a{display: flex;height: 40px;align-items: center;justify-content: space-between;padding: 0 16px;}
+    .mMenu>i{ padding: 28px 380px; font-size: 30px;color: #fff;}
+    .mMenu>ul>li{padding: 20px; }
+    .mMenu>ul>li>a{display: flex;height: 50px;align-items: center;
+        justify-content: center;
+        color: #ffffff; font-size: 20px;
+    }
     .mMenu>ul>li.hover .submenu{display: block;}
-    .mMenu>ul>li .submenu{padding: 10px 16px}
-    .mMenu>ul>li .submenu a{display: block;line-height: 30px;text-align: center;}
-    .mMenu>ul>li .submenu a:hover{color: #6837f8;border-bottom: 1px solid #6837f8;}
+    .mMenu>ul>li .submenu{padding: 10px 16px;display: none;}
+    .mMenu>ul>li .submenu a{line-height: 30px;text-align: center;color: #000;}
+    .mMenu>ul>li .submenu a:hover{color: #6837f8;}
 
     
 

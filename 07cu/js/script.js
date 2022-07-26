@@ -8,11 +8,17 @@ $(".navbar>ul>li").hover(function(){
 
 $(".toggle").click(function(){
     $(".navbarClone").css("left",0);
-    $(".overlay").show();
+    // $(".overlay").show();
+    $(".mMenu>i").show();
 })
-$(".overlay").click(function(){
+// $(".overlay").click(function(){
+//     $(".navbarClone").css("left","-100%");
+//     $(".overlay").hide();
+// });
+
+$(".mMenu>i").click(function(){
     $(".navbarClone").css("left","-100%");
-    $(".overlay").hide();
+    $(".mMenu>i").hide();
 });
 
 $(".language div").click(function(){
@@ -40,9 +46,38 @@ if($(this).hasClass("active")){
 
         
 }
+
 })
 
+$(".mMenu>ul>li>a").click(function(e){
+    e.preventDefault();
 
+    $(".mMenu>ul>li>a").parent().find(".submenu").slideUp()
+
+    if( $(this).hasClass("active") ){ 
+        $(".mMenu>ul>li>a").removeClass("active");
+    }else{
+        $(this).parent().find(".submenu").slideDown();
+        $(".mMenu>ul>li>a").removeClass("active");
+        $(this).addClass("active"); 
+        
+
+    }
+})
+
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset;
+
+    if( scrollY > 700 ){
+        //$(".header").attr("style","position:fixed")
+        $("#header").addClass("fixed");
+    }else{
+        //$(".header").attr("style","");
+        $("#header").removeClass("fixed");
+    }
+
+    $(".scroll").html(parseInt(scrollY))
+})
 
 
 $(document).ready(function(){
