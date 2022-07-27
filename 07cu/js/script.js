@@ -77,7 +77,7 @@ $(window).scroll(function(){
     }
 
     $(".scroll").html(parseInt(scrollY))
-})
+});
 
 
 $(document).ready(function(){
@@ -89,4 +89,19 @@ $(document).ready(function(){
         innerWidth:700,
         innerHeight:394
     })
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
