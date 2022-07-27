@@ -5,3 +5,4 @@
 1. college https://geominji1.github.io/2022web-site/04college
 1. por_site https://geominji1.github.io/2022web-site/05por_site
 1. ybtour https://geominji1.github.io/2022web-site/06ybtour
+1. cu https://geominji1.github.io/2022web-site/07cu
