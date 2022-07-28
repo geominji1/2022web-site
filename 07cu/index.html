@@ -14,6 +14,22 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/jquery.colorbox-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+         $(function(){
+            let slide = $(".slider").bxSlider({
+                mode:"fade",
+                controls:false
+            })
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            })
+            $(".next").click(function(){
+                slide.goToNextSlide();
+            })
+        })
+    </script>
 </head>
 <body>
     <header id="header">
@@ -162,7 +178,93 @@
             <li>
                 <a href="https://www.youtube.com/embed/q2AcjbgqAFc" class="youtube"><img src="images/sec1_play.png" alt=""></a>
             </li>
-            <li>3</li>
+
+
+
+
+
+            <li>
+                <ul class="slider">
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>cu플러스티머니<br>
+                                        결제 시 20% 할인</h3>
+                                    <h4>아이스크림 전 상품<br>
+                                        최대 3천원</h4>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/sec1_slide01.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>cu플러스티머니<br>
+                                        결제 시 20% 할인</h3>
+                                    <h4>아이스크림 전 상품<br>
+                                        최대 3천원</h4>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/sec1_slide02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>cu플러스티머니<br>
+                                        결제 시 20% 할인</h3>
+                                    <h4>아이스크림 전 상품<br>
+                                        최대 3천원</h4>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/sec1_slide03.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>cu플러스티머니<br>
+                                        결제 시 20% 할인</h3>
+                                    <h4>아이스크림 전 상품<br>
+                                        최대 3천원</h4>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/sec1_slide04.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>cu플러스티머니<br>
+                                        결제 시 20% 할인</h3>
+                                    <h4>아이스크림 전 상품<br>
+                                        최대 3천원</h4>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/sec1_slide05.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="sBtn">
+                    <div class="prev"><img src="images/sec1_prev.png" alt=""></div>
+                    <div class="next"><img src="images/sec1_next.png" alt=""></div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+            </li>
             <li>
                 <div>
                     <img src="images/sec1_icon02.png" alt="">

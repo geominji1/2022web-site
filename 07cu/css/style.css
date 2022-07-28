@@ -83,12 +83,13 @@
     height: 100vh;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;background-image: url(../images/header_slide01.jpg);
 }
 
-.sliderWrap{margin: 0 auto;}
+.sliderWrap{  }
 .swiper{width: 100%;height: 100%;}
-.swiper-slide{position: relative; margin: 0 auto;}
+.swiper-slide{position: relative;}
+
 
 
 .swiper-slide .text{position: absolute;text-align: center;padding: 220px 643px;}
@@ -97,12 +98,14 @@
 
 .swiper-button-next{
     background: url(../images/header_next.png) no-repeat;margin-right: 30px;
-    transform: scale(3); background-size: 100%;
+    transform: scale(3); background-size: 100%; 
+    top: 360px!important;
 }
 
 .swiper-button-prev{
     background: url(../images/header_prev.png) no-repeat;margin-left: 30px;
     transform: scale(3); background-size: 100%;
+    top: 360px!important;
 }
 
 
@@ -110,9 +113,15 @@
     display: none;
 }
 
-.swiper-pagination{top: 540px; }
-.swiper-active{background: rgb(255, 39, 39);}
+.swiper-pagination{top: 540px; position: absolute;}
+   
 
+.swiper-pagination-bullet {
+    background: #F8FDFF!important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #38D443!important;
+}
 
 
 /* contents  */
@@ -191,6 +200,36 @@
     background-position: center;
     background-size: cover;cursor: pointer;
 }
+
+/* slide  */
+.contents>ul>li:nth-child(3){height: 310px;}
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0 none;
+   
+}
+.sItems{background: white;}
+.itemWrap{display: flex;}
+.sItems .sTxt,.sItems .sImg{width: 310px;height: 310px; }
+.sItems .sTxt{position: relative;}
+.sItems .sTxt:after{
+    content:"";display: block;
+    width:0;height:0;
+    border-width:20px;
+    border-style:solid;
+    border-color: transparent transparent transparent white;
+    position: absolute;top: 50%;right: -40px;margin-top: -20px;
+}
+.sItems .txt{padding: 40px;}
+.sItems .txt h3{margin-bottom: 10px;}
+.sBtn{position: absolute;bottom: 40px;display: flex;gap:5px;left: 190px;cursor: pointer; z-index: 109;}
+.sBtn .next{padding: 0 20px;}
+
+
+
+
 .txt-card{
     position: absolute;
     left: 40px;top: 40px;
@@ -213,7 +252,7 @@
 
 @media (max-width: 1399px) {
 
-}
+} 
 
 @media (max-width: 1199px) {
     .container{width: 100%;}
@@ -227,6 +266,8 @@
     .navbar{display: none;}
     .navbarWrap{padding: 10px 20px;}
     .toggle{display: flex;margin-left: auto;padding: 32px;}
+    #header.fixed .toggle{background:#6837f8; border-radius: 8px ;}
+
     .language{display: none;}
     
     .navbarClone{
@@ -252,10 +293,8 @@
     .mMenu>ul>li .submenu a{line-height: 30px;text-align: center;color: #000;}
     .mMenu>ul>li .submenu a:hover{color: #6837f8;}
 
-    
 
-
-    .overlay{
+        .overlay{
         display: none;
         position: fixed;
         width: 100%;height: 100%;
@@ -263,6 +302,13 @@
         background: #000;
         opacity: 0.5;
     }
+    .swiper-slide img{width: 767px; height: 900px;}
+    .swiper-slide .text{position: absolute; padding: 90px;}
+    .swiper-slide .text h1{color: #fff;font-size: 94px; line-height: 1.5;}
+    .swiper-slide .text h3{color: #fff;font-size: 16px;line-height: 2}
+    .swiper-button-next,.swiper-button-prev{display: none!important;}
+
+
 }
 
 @media (max-width: 575px) {
