@@ -3,7 +3,7 @@
 .container{width: 1240px;margin: 0 auto}
 
 /* header  */
-#header{position:fixed;;width: 100%;z-index:100 ;}
+#header{position:fixed;width: 100%;z-index:100 ;}
 
 #header.fixed{
     position: fixed;
@@ -278,18 +278,36 @@
 
 
 
-.storyWrpa{display: flex;justify-content: center;
-        align-items: center;}
 
-.storyWrpa .bg{ position: relative; padding: 400px 0;}
+.storyWrap{background-attachment: fixed;  height: 80vh;  position: relative;
+    background-image: url(../images/sec2_contents.jpg); 
+    background-position: center;
+    background-repeat: no-repeat; margin-top: 400px; padding: 50px 30px;
+    
+       }
+
+.storyWrap img{width: 80%; display: flex; justify-content: center;align-items: center;position: absolute; margin-left: 80px;} 
+
+       
+       /* .story{ display: flex; justify-content: center; align-items: center;width:1000vh ;}  
+       .storyWrap h2{display: flex; justify-content: center; align-content: center; position: absolute;} */
+/* .storyWrap h2{display: flex; justify-content: center; position: absolute;}
+.story{ display: flex; justify-content: center; align-items: center; padding: 100px 0; position: absolute; }
+.iconWrap{background-color: #fff; }
+.iconWrap li{float: left; }
+.iconWrap li img{margin-right: -30px;}
+.iconWrap .text{text-align: center;} */
+
+
+/* .storyWrpa .bg{  }
 .sliderWrap .icon ul{}
-.storyWrpa .icon {position:absolute; }
+.storyWrpa .icon {s }
 .storyWrpa .icon li{ float: left;width: calc(100% / 4);padding: 0 60px; } 
 .storyWrpa .icon img{}
 .storyWrpa .text{text-align: center; color: #fff; }
 .storyWrpa .text h3{font-size: 20px;}
 
-.storyWrpa .text h4{font-size: 14px; }
+.storyWrpa .text h4{font-size: 14px; } */
 /********** css responsive  **********/
 
 
@@ -376,13 +394,13 @@
     .mMenu{width: 200px;}
     .mMenu>i{ padding: 28px 380px; font-size: 30px;color: #fff;}
     .mMenu>ul>li{padding: 20px; }
-    .mMenu>ul>li>a{display: flex;height: 50px;align-items: center;
+    .mMenu>ul>li>a{display: flex;height: _50px;align-items: center;
         justify-content: center;
         color: #ffffff; font-size: 20px;
     }
     .mMenu>ul>li.hover .submenu{display: block;}
     .mMenu>ul>li .submenu{padding: 10px 16px;display: none;}
-    .mMenu>ul>li .submenu a{line-height: 30px;text-align: center;color: #000;}
+    .mMenu>ul>li .submenu a{_line-height: 30px;text-align: center;color: #000;}
     .mMenu>ul>li .submenu a:hover{color: #6837f8;}
 
 
