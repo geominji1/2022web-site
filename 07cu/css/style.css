@@ -316,11 +316,25 @@
 
 /* slide  */
 
-.snsWrap li{  background-color: rgb(253, 127, 127); margin-top: 40px;} 
+.snsWrap{ margin-top: 400px; cursor: pointer;}
+.snsWrap li{  height: 622px;
+    background-color: #f0f0f0; float: left; 
+    width: calc(100% / 4 ); 
+}  
+
+.snsWrap .slider2 .sTxt{background-color: #f0f0f0; padding:20px 30px;}
+.slider2 .sItems .txt{line-height: 23px;  }
+.slider2 .snsgood{display: flex; margin-left:200px; padding: 10px 0;}
 
 
+.snsWrap .slider3 .sTxt{background-color: #f0f0f0; padding:20px 30px;}
+.slider3 .sItems .txt{line-height: 23px;  }
+.slider3 .snsgood{display: flex; margin-left:200px; padding: 10px 0;}
 
-.snsWrap .slider2{  background-color: #fff; position: relative ;} 
+.snsWrap .slider4 .sTxt{background-color: #f0f0f0; padding:20px 30px;}
+.slider4 .sItems .txt{line-height: 23px;  }
+.slider4 .snsgood{display: flex; margin-left:200px; padding: 10px 0;}
+
 
 .bx-pager-link{display: none;}
 
