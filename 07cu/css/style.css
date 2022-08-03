@@ -243,11 +243,11 @@
     border: 0 none;
    
 }
-.sItems{background: white;}
-.itemWrap{display: flex;}
-.sItems .sTxt,.sItems .sImg{width: 310px;height: 310px; }
-.sItems .sTxt{position: relative;}
-.sItems .sTxt:after{
+.slider .sItems{background: white;}
+.slider .itemWrap{display: flex;}
+.slider .sItems .sTxt,.sItems .sImg{width: 310px;height: 310px; }
+.slider .sItems .sTxt{position: relative;}
+.slider .sItems .sTxt:after{
     content:"";display: block;
     width:0;height:0;
     border-width:20px;
@@ -255,8 +255,8 @@
     border-color: transparent transparent transparent white;
     position: absolute;top: 50%;right: -40px;margin-top: -20px;
 }
-.sItems .txt{padding: 40px;}
-.sItems .txt h3{margin-bottom: 10px;}
+.slider .sItems .txt{padding: 40px;}
+.slider .sItems .txt h3{margin-bottom: 10px;}
 .sBtn{position: absolute;bottom: 40px;display: flex;gap:5px;left: 190px;cursor: pointer; z-index: 109;}
 .sBtn .next{padding: 0 20px;}
 
@@ -279,10 +279,10 @@
 
 
 
-.storyWrap{background-attachment: fixed;  height: 80vh;  position: relative;
+.storyWrap{background-attachment: fixed;  height: 60vh;  position: relative;
     background-image: url(../images/sec2_contents.jpg); 
     background-position: center;
-    background-repeat: no-repeat; margin-top: 400px; padding: 50px 30px;
+    background-repeat: no-repeat; margin-top: 400px; padding: 60px;
     
        }
 
@@ -308,10 +308,29 @@
 .storyWrpa .text h3{font-size: 20px;}
 
 .storyWrpa .text h4{font-size: 14px; } */
+
+
+
+
+
+
+/* slide  */
+
+.snsWrap li{  background-color: rgb(253, 127, 127); margin-top: 40px;} 
+
+
+
+.snsWrap .slider2{  background-color: #fff; position: relative ;} 
+
+.bx-pager-link{display: none;}
+
+
+
+
+
+
+
 /********** css responsive  **********/
-
-
-
 
 @media (max-width: 1399px) {
 
@@ -383,7 +402,7 @@
     .navbarClone{
         position: fixed;
         width:90%;
-        -height: 100%;
+        height: 100%;
         top: 0;left: -100%;
         background: #37d243;
         display: block;
@@ -425,7 +444,7 @@
     .contents>ul>li:nth-child(11){ display: none;
     }
 
-
+    .storyWrap{display: none;}
 
       
 }
