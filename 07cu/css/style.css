@@ -278,11 +278,11 @@
 
 
 
-
+.contentscontainerstory{margin: 0 auto;}
 .storyWrap{background-attachment: fixed;  height: 60vh;  position: relative;
     background-image: url(../images/sec2_contents.jpg); 
-    background-position: center;
-    background-repeat: no-repeat; margin-top: 400px; padding: 60px;
+    background-size:contain; 
+    background-repeat: no-repeat; margin-top: 400px;
     
        }
 
@@ -346,12 +346,18 @@
    
 /* footer */
 
-.footerWrap{background: #f0f0f0; display: flex; 
-    justify-content: center;  align-items: center; }
+.footerWrap{background: #f0f0f0; margin-top: 90px;  }
 
+.footer{width: 1240px; margin: 0 auto;display: flex;  
+    justify-content: space-between;  align-items: center; padding: 60px 0;}
 
-.footerR{display: flex;}
-
+.footerLogo img{padding: 20px 0;}
+.footerLogo .text{line-height: 30px; color:rgb(160, 160, 160);}   
+.footerWrap .sns li{float: left; padding: 0 10px 0 0}
+.footerR{display: flex; margin-left: 300px; } 
+.footerR li{  color: #313842;font-size: 13px; line-height: 25px; padding: 0 10px;}
+.footerR h5{color: #6837f8 ; line-height: 40px; }
+.footerR h6{color: #0e0e0e ; padding: 0 10px 0 0px; font-size: 13px; }
 
 /********** css responsive  **********/
 
@@ -469,7 +475,15 @@
 
     .storyWrap{display: none;}
 
-      
+    .snsWrap{}
+
+   .footer{ display: block; margin-top: 10px; }
+   .footerLogo{padding: 30px 40px;}
+   .footerR{display: none;}
+
+
+
+    
 }
     
 
