@@ -415,6 +415,9 @@
     .slider4{display: none;} */
     .snsWrap{display: none;}
   
+    .sec4_contents01,.sec4_contents02{ display: none;}
+    .footer{ bottom: 0; width: 100px; display: flex; }
+    .footerR{display: none;}
 
 }
 
@@ -481,9 +484,7 @@
 
     .snsWrap{}
 
-   .footer{ display: block; margin-top: 10px; }
-   .footerLogo{padding: 30px 40px;}
-   .footerR{display: none;}
+  
 
 
 
