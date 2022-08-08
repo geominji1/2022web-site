@@ -68,7 +68,7 @@ $(".mMenu>ul>li>a").click(function(e){
 $(window).scroll(function(){
     let scrollY = window.pageYOffset;
 
-    if( scrollY > 700 ){
+    if( scrollY > 100 ){
         //$(".header").attr("style","position:fixed")
         $("#header").addClass("fixed");
     }else{
