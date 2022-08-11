@@ -13,15 +13,17 @@
     <style>
     body,html{
         background: linear-gradient(#fcffde, rgb(124, 187, 88)) no-repeat; 
-        width: 100%; height: 100%;} 
+        width: 100%; height: 100%;z-index: 0;}
         h1{
             display: flex; justify-content: center; 
             padding: 40px 0 0; }
+        .smile{background-image: url(../images/Asset\ 4.png); z-index: 10; position: relative;}    
         .viewData{
             width: 400px; margin: 0 auto;background: rgb(255, 255, 255);
             border-radius: 5px; border: 2px solid #000; 
             border-top: 30px solid rgb(0, 0, 0);
             border-bottom: 10px solid rgb(0, 0, 0); 
+            /* background-image: url(../images/Asset\ 2.png); */
         }
 
         .viewData li{
@@ -58,6 +60,8 @@
 <body>
 
     <h1 class="animated bounceIn">💚 T O D O L I S T 💚</h1>
+
+    <div class="smile"></div>
 
     <div class="inpWrap">
         <input type="text" class="inp">
