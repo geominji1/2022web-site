@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+    body,html{
+        background: linear-gradient(#fcffde, rgb(124, 187, 88)) no-repeat; 
+        width: 100%; height: 100%;} 
+        h1{
+            display: flex; justify-content: center; 
+            padding: 40px 0 0; }
+        .viewData{
+            width: 400px; margin: 0 auto;background: rgb(255, 255, 255);
+            border-radius: 5px; border: 2px solid #000; 
+            border-top: 30px solid rgb(0, 0, 0);
+            border-bottom: 10px solid rgb(0, 0, 0); 
+        }
+
+        .viewData li{
+            position: relative;height: 40px;
+            line-height: 40px;margin-bottom: 2px;cursor: pointer; 
+        }
+
+        .viewData li:hover{background: rgb(250, 255, 150);}
+        .viewData li .txt{padding: 0 16px;}
+        .viewData li .txt.active{background:#ACEAA7}
+        .viewData li .txt.txt.active:hover{background: rgb(250, 255, 150);}
+
+        .viewData .iconWrap{
+            display: flex;position: absolute;
+            gap:10px;right: 10px;top: 5px; 
+        }
+
+        .viewData .iconWrap a{
+            width: 30px;height: 30px; background: #000;
+            color:white;border-radius: 50%;
+            display: flex;justify-content: center;
+            align-items: center; line-height: 30px;
+        }
+
+        .inpWrap{width: 400px;margin: 30px auto;display: flex;gap:9px;}
+      
+        .inpWrap input[type="text"]{flex-grow: 1;text-indent: 14px; 
+            border: 2px solid #000; border-radius: 5px;}
+        .inpWrap .btn1{width:100px;height: 40px; background: rgb(250, 255, 150);border-radius: 5px;}
+        .inpWrap .btn1:hover{background:#ACEAA7}
+
+    </style>
+</head>
+<body>
+
+    <h1 class="animated bounceIn">💚 T O D O L I S T 💚</h1>
+
+    <div class="inpWrap">
+        <input type="text" class="inp">
+        <button class="btn1"><h4>TODOLIST</h4></button>
+    </div>
+
+    <ul class="viewData">
+        
+        
+    </ul>
+
+
+
+    <script>
+        let listData = [];
+
+        const viewData = document.querySelector(".viewData");
+        const inp = document.querySelector(".inp");
+        const btn1 = document.querySelector(".btn1");
+
+
+        btn1.addEventListener("click",function(){
+            if(inp.value != ""){
+                let value = {"todo":inp.value,"done":false};
+                listData.push(value);
+
+                let valueData = JSON.stringify(listData)
+                localStorage.setItem("todoData",valueData)
+
+                view();
+                inp.value ="";
+
+            }else{
+                alert("투두리스트를 작성하세요📝");
+                inp.focus();
+            }
+        })
+
+
+        view();
+
+        function view(){
+            if(localStorage.length > 0){
+                let localData = localStorage.getItem("todoData");
+                listData = JSON.parse(localData)
+            }
+
+            todoData = '';
+            listData.forEach(function(item,i){
+                console.log(listData[i]["todo"]);
+                todoData += `<li>`
+                if( item.done == true){
+                    todoData += `<div class="txt active"  onclick="done(${i})">${listData[i]["todo"]}</div>`
+                }else{
+                    todoData += `<div class="txt"  onclick="done(${i})">${listData[i]["todo"]}</div>`
+                }
+
+                todoData += `<div class="iconWrap">`
+                todoData += `<a href="#" onclick="del(${i})">✖</a>`
+
+                if( item.done == true){  
+                    todoData += `<a href="#" onclick="done(${i})">✔</a>`
+                }else{
+                    todoData += `<a href="#" onclick="done(${i})">💚</a>`
+                }
+
+                todoData += `</div>`
+                todoData += `</li>`
+            });
+
+            viewData.innerHTML = todoData;
+
+        }
+
+        function del(idx){
+            listData.splice(idx,1);
+
+            let valueData = JSON.stringify(listData);
+            localStorage.setItem("todoData",valueData);
+
+            view()
+
+        }
+
+        function done(idx){
+            listData[idx].done = !listData[idx].done;
+
+            let valueData = JSON.stringify(listData);
+            localStorage.setItem("todoData",valueData);
+
+            view()
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
