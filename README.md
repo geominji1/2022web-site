@@ -6,5 +6,5 @@
 1. por_site https://geominji1.github.io/2022web-site/05por_site
 1. ybtour https://geominji1.github.io/2022web-site/06ybtour
 1. cu https://geominji1.github.io/2022web-site/07cu
-1. todo http://geominji1.github.io/2022web-site/08todo
-1. bootstrap http://geominji1.github.io/2022web-site/09bootstrap
+1. todo http://geominji1.github.io/2022web-site/08todo/todo.html
+1. bootstrap http://geominji1.github.io/2022web-site/09bootstrap/jobda.html
